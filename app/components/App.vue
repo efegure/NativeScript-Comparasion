@@ -137,9 +137,6 @@ export default {
     }
   },
   components: {
-    NuButton,
-    RadioButton,
-    TextInput,
     AbsoluteLayoutDoc,
     ActionBarDoc,
     ActionDialogDoc,
