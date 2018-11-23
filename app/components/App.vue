@@ -2,58 +2,70 @@
     <Page>
       <ScrollView orientation="vertical">
         <StackLayout  backgroundColor="#3c495e">
-          <Label class="header" text="Absolute Layout"></Label>
+            <!--UTILITIES-->
+            <Label class="main-header" text="UTILITIES"></Label>
+            <Label class="header" text="View Directive "></Label>
+            <ViewDirectiveDoc></ViewDirectiveDoc>
+            <Label class="header" text="View Directive Container "></Label>
+            <ViewDirectiveContainerDoc></ViewDirectiveContainerDoc>
+            <!--LAYOUTS-->
+            <Label class="main-header" text="Layouts"></Label>
+            <Label class="header" text="Absolute Layout"></Label>
             <AbsoluteLayoutDoc></AbsoluteLayoutDoc>
-          <Label class="header" text="Action Bar"></Label>
-            <ActionBarDoc></ActionBarDoc>
-          <Label class="header" text="Action Dialog"></Label>
-            <ActionDialogDoc></ActionDialogDoc>
-            <Label class="header" text="Activity Indicator"></Label>
-            <ActivityIndicatorDoc></ActivityIndicatorDoc>
-            <Label class="header" text="Confirm Dialog"></Label>
-            <ConfirmDialogDoc></ConfirmDialogDoc>
             <Label class="header" text="Dock Layout"></Label>
             <DockLayoutDoc></DockLayoutDoc>
             <Label class="header" text="Flexbox Layout"></Label>
             <FlexboxLayoutDoc></FlexboxLayoutDoc>
-            <Label class="header" text="Flexbox LayoutColumn"></Label>
+            <Label class="header" text="Flexbox Layout Column"></Label>
             <FlexboxLayoutColumnDoc></FlexboxLayoutColumnDoc>
             <Label class="header" text="Flexbox Layout Column Reverse"></Label>
             <FlexboxLayoutColumnReverseDoc></FlexboxLayoutColumnReverseDoc>
-            <Label class="header" text="Frame "></Label>
-            <FrameDoc></FrameDoc>
             <Label class="header" text="Grid Layout "></Label>
             <GridLayoutDoc></GridLayoutDoc>
             <Label class="header" text="Grid Layout Responsive "></Label>
             <GridLayoutResponsiveDoc></GridLayoutResponsiveDoc>
             <Label class="header" text="Grid Layout Complex Grid"></Label>
             <GridLayoutComplexGridDoc></GridLayoutComplexGridDoc>
-
+            <Label class="header" text="Stack Layout "></Label>
+            <StackLayoutDoc></StackLayoutDoc>
+            <Label class="header" text="Stack Layout Horizontal "></Label>
+            <StackLayoutHorizontalDoc></StackLayoutHorizontalDoc>
+            <Label class="header" text="Stack Layout Horizontal Children"></Label>
+            <StackLayoutHorizontalChildrenDoc></StackLayoutHorizontalChildrenDoc>
+            <Label class="header" text="Stack Layout Vertical Children "></Label>
+            <StackLayoutVerticalChildrenDoc></StackLayoutVerticalChildrenDoc>
+            <Label class="header" text="Wrap Layout "></Label>
+            <WrapLayoutDoc></WrapLayoutDoc>
+            <Label class="header" text="Wrap Layout Equal Column "></Label>
+            <WrapLayoutEqualColumnDoc></WrapLayoutEqualColumnDoc>
+            <!--ACTIONBARS-->
+            <Label class="main-header" text="Action Bars"></Label>
+            <Label class="header" text="Action Bar"></Label>
+            <ActionBarDoc></ActionBarDoc>
+            <Label class="header" text="Action Item"></Label>
+            <ActionItemDoc></ActionItemDoc>
+            <Label class="header" text="Navigation Button "></Label>
+            <NavigationButtonDoc></NavigationButtonDoc>
+            <!--COMPONENTS-->
+            <Label class="main-header" text="Components"></Label>
+            <Label class="header" text="Activity Indicator"></Label>
+            <ActivityIndicatorDoc></ActivityIndicatorDoc>
+            <Label class="header" text="Button"></Label>
+            <ButtonDoc></ButtonDoc>
+            <Label class="header" text="Html View"></Label>
+            <HtmlViewDoc></HtmlViewDoc>
             <Label class="header" text="Image "></Label>
             <ImageDoc></ImageDoc>
             <Label class="header" text="Label "></Label>
             <LabelDoc></LabelDoc>
             <Label class="header" text="List Picker "></Label>
             <ListPickerDoc></ListPickerDoc>
-            <Label class="header" text="Login Dialog "></Label>
-            <LoginDialogDoc></LoginDialogDoc>
-            <Label class="header" text="Navigation Button "></Label>
-            <NavigationButtonDoc></NavigationButtonDoc>
             <Label class="header" text="Progress "></Label>
             <ProgressDoc></ProgressDoc>
-            <Label class="header" text="Prompt Dialog "></Label>
-            <PromptDialogDoc></PromptDialogDoc>
             <Label class="header" text="Scroll View "></Label>
             <ScrollViewDoc></ScrollViewDoc>
-            
             <Label class="header" text="Segmented Bar "></Label>
             <SegmentedBarDoc></SegmentedBarDoc>
-            <Label class="header" text="Stack Layout "></Label>
-            <StackLayoutDoc></StackLayoutDoc>
-            <Label class="header" text="Stack Layout "></Label>
-            <StackLayoutDoc></StackLayoutDoc>
-            <Label class="header" text="Stack Layout Horizontal "></Label>
-            <StackLayoutHorizontalDoc></StackLayoutHorizontalDoc>
             <Label class="header" text="Switch "></Label>
             <SwitchDoc></SwitchDoc>
             <Label class="header" text="Tabview "></Label>
@@ -64,17 +76,20 @@
             <TextViewDoc></TextViewDoc>
             <Label class="header" text="Time Picker "></Label>
             <TimePickerDoc></TimePickerDoc>
-            <Label class="header" text="View Directive "></Label>
-            <ViewDirectiveDoc></ViewDirectiveDoc>
-            <Label class="header" text="View Directive Container "></Label>
-            <ViewDirectiveContainerDoc></ViewDirectiveContainerDoc>
             <Label class="header" text="Web View "></Label>
             <WebViewDoc></WebViewDoc>
-            <Label class="header" text="Wrap Layout "></Label>
-            <WrapLayoutDoc></WrapLayoutDoc>
-            <Label class="header" text="Wrap Layout Equal Column "></Label>
-            <WrapLayoutEqualColumnDoc></WrapLayoutEqualColumnDoc>
-            
+            <Label class="header" text="Frame "></Label>
+            <FrameDoc></FrameDoc>
+            <!--DIALOGS-->
+            <Label class="main-header" text="Dialogs"></Label>
+            <Label class="header" text="Action Dialog"></Label>
+            <ActionDialogDoc></ActionDialogDoc>
+            <Label class="header" text="Confirm Dialog"></Label>
+            <ConfirmDialogDoc></ConfirmDialogDoc>
+            <Label class="header" text="Login Dialog "></Label>
+            <LoginDialogDoc></LoginDialogDoc>
+            <Label class="header" text="Prompt Dialog "></Label>
+            <PromptDialogDoc></PromptDialogDoc> 
         </StackLayout>
       </ScrollView>
 
@@ -184,14 +199,21 @@ export default {
 
 <style lang="scss">
 .header {
-  background-color:black;
+  background-color: black;
   margin: 10px 0 10px 0;
   text-align: center;
   color: white;
   text-transform: uppercase;
 }
-Button{
-  font-size:13px;
+.main-header {
+  margin: 15px 15px 0px 5px;
+  text-align: left;
+  color: #43b883;
+  text-transform: uppercase;
+  font-size: 23px;
+}
+button {
+  font-size: 13px;
 }
 </style>
 
