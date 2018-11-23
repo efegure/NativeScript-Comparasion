@@ -19,8 +19,7 @@
     "nativescript-vue-devtools": "^1.0.0",
     "nativescript-toast": "^1.4.6",
     "nativescript-vue": "^2.0.0",
-    "tns-core-modules": "^5.0.2",
-    "nuweb-ui": "file:../nuweb-ui/"
+    "tns-core-modules": "^5.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",

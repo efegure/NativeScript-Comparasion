@@ -82,7 +82,6 @@
 </template>
 
 <script>
-import { NuButton, RadioButton, TextInput } from "nuweb-ui";
 import AbsoluteLayoutDoc from "./AbsoluteLayoutDoc";
 import ActionBarDoc from "./ActionBarDoc";
 import ActionDialogDoc from "./ActionDialogDoc";
